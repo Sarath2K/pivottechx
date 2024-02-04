@@ -1,0 +1,87 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.violet-btn {
+    background-color: #320545 !important;
+    color: white !important;
+    padding: 6px 30px !important;
+    border-radius: 20px !important;
+}
+
+.App-header {
+    background-color: #9F8DA9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.img-container img {
+    display: block;
+    width: 100%;
+    border-radius: 44px;
+    box-shadow: 2px 2px 41px 1px #4d4d4d;
+    /* Adjust the border-radius for rounded corners */
+}
+
+.img-container::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the distance of the shadow from the image */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    /* Adjust the width of the shadow */
+    height: 20px;
+    /* Adjust the height of the shadow */
+    background: rgba(0, 0, 0, 0.3);
+    /* Adjust the shadow color and opacity */
+    border-radius: 50%;
+    /* Make the shadow circular */
+    z-index: -1;
+    /* Place the shadow behind the image */
+}
+
